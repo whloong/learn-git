@@ -1,0 +1,17 @@
+git init					//初始化本地仓库
+git add<file>					//添加文件
+git add *.html					//添加html类文件
+git add .					//添加所有文件
+git rm --cached index.html			//去掉已添加的index.html文件
+git status					//查看状态
+git push					//推送到仓库
+git pull					//从远程仓库拉取数据
+git clone					//从远程仓库拷贝数据
+git commit					//向本地提交文件
+git commit -m '备注的内容'			//向本地提交文件并备
+
+git --version					//查看版本
+git config --global user.name '用户名'		//设置用户名
+git config --global user.email '邮箱地址'	//设置邮箱
+
+
