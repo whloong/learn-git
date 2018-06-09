@@ -1,25 +1,26 @@
-git init					//初始化本地仓库
+﻿git init								//初始化本地仓库
 
-git add<file>					//添加文件
-git add *.html					//添加html类文件
-git add .					//添加所有文件
-git rm --cached index.html			//去掉已添加的index.html文件
+git add<file>								//添加文件
+git add *.html								//添加html类文件
+git add .								//添加所有文件
+git rm --cached index.html						//去掉已添加的index.html文件
 
-git status					//查看状态
+git status								//查看状态
 
-git push					//推送到仓库
+git push								//推送到仓库
 
-git pull					//从远程仓库拉取数据
-git pull origin master				//将origin这个版本库的代码更新到本地的master
+git pull								//从远程仓库拉取数据
+git pull origin master							//将origin这个版本库的代码更新到本地的master
 
-git clone					//从远程仓库拷贝数据
+git clone								//从远程仓库拷贝数据
 
-git commit					//向本地提交文件
-git commit -m '备注的内容'			//向本地提交文件并备
+git commit								//向本地提交文件
+git commit -m '备注的内容'						//向本地提交文件并备
 
-git --version					//查看版本
-git config --global user.name '用户名'		//设置用户名
-git config --global user.email '邮箱地址'	//设置邮箱
+git --version								//查看版本
+git config --global user.name '用户名'					//设置用户名
+git config --global user.email '邮箱地址'				//设置邮箱
+git config --global user.signingkey					//设置密码
 
 git remote add origin "https:github.com/whloong/learn-git.git"		//添加远程仓库地址
 git remote -v								//查看现有的远程仓库地址
@@ -27,8 +28,18 @@ git remote -e								//编辑config文件
 git remote set -url --add origin <url>					//添加一个可以push但不能pull的地址
 
 git log									//查看历史日志
+git reflog								//查看每一次的操作
 
 git revert								//还原一个版本的修订
+
+git reset								//把Git仓库的文件还原到工作目录
+git reset HEAD~								//恢复上一个快照到缓存区
+git reset HEAD~10							//恢复上十个快照到缓存区
+get reset --soft HEAD~							//恢复快照到指向
+get reset --hard HEAD~							//恢复快照到工作区
+get reset 00c2929							//指定恢复，一般输入五位以上的ID号就可以了
+
+git chechout								//把暂存区的文件还原到工作目录
 
 
 
