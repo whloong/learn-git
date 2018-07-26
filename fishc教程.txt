@@ -8,4 +8,4 @@ git config --global user.signingkey "密码"
 git config --list				//查看配置信息
 git init					//初始化
 git add <file>					//将文件提交到缓存区
-git commit -m "备注内容"			//将缓存区文件提交到仓库
+git commit -m "备注内容"				//将缓存区文件提交到仓库
